@@ -307,7 +307,7 @@ def start_attack(user_id, target, port, time):
         # Simulate attack execution (original logic here)
         full_command = f"./bgmi {target} {port} {time} 250"
         process = subprocess.run(full_command, shell=True)
-        response = f"Brother enjoy 👌. Target: {target} Port: {port} Time: {time} 200"
+        response = f"Brother enjoy 👌. Target: {target} Port: {port} Time: {time} 120"
         return True, response
     finally:
         with attack_lock:
